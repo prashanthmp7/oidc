@@ -1,0 +1,152 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 11.4
+-- Dumped by pg_dump version 13.3
+
+-- Started on 2022-01-13 22:22:01
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 3272 (class 0 OID 44515)
+-- Dependencies: 377
+-- Data for Name: TimeZones; Type: TABLE DATA; Schema: public; Owner: eliteUser
+--
+
+INSERT INTO public."TimeZones" VALUES (3, '(UTC-10:00) Aleutian Islands', 'Aleutian Standard Time', B'1', '-10:00:00', 'America/Adak');
+INSERT INTO public."TimeZones" VALUES (7, '(UTC-09:00) Coordinated Universal Time-09', 'UTC-09', B'0', '-09:00:00', 'Etc/GMT+9');
+INSERT INTO public."TimeZones" VALUES (4, '(UTC-10:00) Hawaii', 'Hawaiian Standard Time', B'0', '-10:00:00', 'Pacific/Honolulu');
+INSERT INTO public."TimeZones" VALUES (5, '(UTC-09:30) Marquesas Islands', 'Marquesas Standard Time', B'0', '-09:30:00', 'Pacific/Marquesas');
+INSERT INTO public."TimeZones" VALUES (9, '(UTC-08:00) Coordinated Universal Time-08', 'UTC-08', B'0', '-08:00:00', 'Etc/GMT+8');
+INSERT INTO public."TimeZones" VALUES (8, '(UTC-08:00) Baja California', 'Pacific Standard Time (Mexico)', B'1', '-08:00:00', 'America/Tijuana');
+INSERT INTO public."TimeZones" VALUES (10, '(UTC-08:00) Pacific Time (US & Canada)', 'Pacific Standard Time', B'1', '-08:00:00', 'America/Los_Angeles');
+INSERT INTO public."TimeZones" VALUES (11, '(UTC-07:00) Arizona', 'US Mountain Standard Time', B'0', '-07:00:00', 'America/Phoenix');
+INSERT INTO public."TimeZones" VALUES (13, '(UTC-07:00) Mountain Time (US & Canada)', 'Mountain Standard Time', B'1', '-07:00:00', 'America/Denver');
+INSERT INTO public."TimeZones" VALUES (14, '(UTC-06:00) Central America', 'Central America Standard Time', B'0', '-06:00:00', 'America/Guatemala');
+INSERT INTO public."TimeZones" VALUES (15, '(UTC-06:00) Central Time (US & Canada)', 'Central Standard Time', B'1', '-06:00:00', 'America/Chicago');
+INSERT INTO public."TimeZones" VALUES (16, '(UTC-06:00) Easter Island', 'Easter Island Standard Time', B'1', '-06:00:00', 'Pacific/Easter');
+INSERT INTO public."TimeZones" VALUES (18, '(UTC-06:00) Saskatchewan', 'Canada Central Standard Time', B'0', '-06:00:00', 'America/Regina');
+INSERT INTO public."TimeZones" VALUES (19, '(UTC-05:00) Bogota, Lima, Quito, Rio Branco', 'SA Pacific Standard Time', B'0', '-05:00:00', 'America/Bogota');
+INSERT INTO public."TimeZones" VALUES (20, '(UTC-05:00) Chetumal', 'Eastern Standard Time (Mexico)', B'1', '-05:00:00', 'America/Cancun');
+INSERT INTO public."TimeZones" VALUES (21, '(UTC-05:00) Eastern Time (US & Canada)', 'Eastern Standard Time', B'1', '-05:00:00', 'America/New_York');
+INSERT INTO public."TimeZones" VALUES (22, '(UTC-05:00) Haiti', 'Haiti Standard Time', B'1', '-05:00:00', 'America/Port-au-Prince');
+INSERT INTO public."TimeZones" VALUES (23, '(UTC-05:00) Havana', 'Cuba Standard Time', B'1', '-05:00:00', 'America/Havana');
+INSERT INTO public."TimeZones" VALUES (24, '(UTC-05:00) Indiana (East)', 'US Eastern Standard Time', B'1', '-05:00:00', 'America/Indianapolis');
+INSERT INTO public."TimeZones" VALUES (26, '(UTC-04:00) Atlantic Time (Canada)', 'Atlantic Standard Time', B'1', '-04:00:00', 'America/Halifax');
+INSERT INTO public."TimeZones" VALUES (27, '(UTC-04:00) Caracas', 'Venezuela Standard Time', B'1', '-04:00:00', 'America/Caracas');
+INSERT INTO public."TimeZones" VALUES (28, '(UTC-04:00) Cuiaba', 'Central Brazilian Standard Time', B'1', '-04:00:00', 'America/Cuiaba');
+INSERT INTO public."TimeZones" VALUES (29, '(UTC-04:00) Georgetown, La Paz, Manaus, San Juan', 'SA Western Standard Time', B'0', '-04:00:00', 'America/La_Paz');
+INSERT INTO public."TimeZones" VALUES (30, '(UTC-04:00) Santiago', 'Pacific SA Standard Time', B'1', '-04:00:00', 'America/Santiago');
+INSERT INTO public."TimeZones" VALUES (33, '(UTC-03:00) Araguaina', 'Tocantins Standard Time', B'1', '-03:00:00', 'America/Araguaina');
+INSERT INTO public."TimeZones" VALUES (34, '(UTC-03:00) Brasilia', 'E. South America Standard Time', B'1', '-03:00:00', 'America/Sao_Paulo');
+INSERT INTO public."TimeZones" VALUES (35, '(UTC-03:00) Cayenne, Fortaleza', 'SA Eastern Standard Time', B'0', '-03:00:00', 'America/Cayenne');
+INSERT INTO public."TimeZones" VALUES (36, '(UTC-03:00) City of Buenos Aires', 'Argentina Standard Time', B'1', '-03:00:00', 'America/Buenos_Aires');
+INSERT INTO public."TimeZones" VALUES (37, '(UTC-03:00) Greenland', 'Greenland Standard Time', B'1', '-03:00:00', 'America/Godthab');
+INSERT INTO public."TimeZones" VALUES (39, '(UTC-03:00) Punta Arenas', 'Magallanes Standard Time', B'1', '-03:00:00', 'America/Punta_Arenas');
+INSERT INTO public."TimeZones" VALUES (40, '(UTC-03:00) Saint Pierre and Miquelon', 'Saint Pierre Standard Time', B'1', '-03:00:00', 'America/Miquelon');
+INSERT INTO public."TimeZones" VALUES (41, '(UTC-03:00) Salvador', 'Bahia Standard Time', B'1', '-03:00:00', 'America/Bahia');
+INSERT INTO public."TimeZones" VALUES (44, '(UTC-01:00) Azores', 'Azores Standard Time', B'1', '-01:00:00', 'Atlantic/Azores');
+INSERT INTO public."TimeZones" VALUES (42, '(UTC-02:00) Coordinated Universal Time-02', 'UTC-02', B'0', '-02:00:00', 'America/Noronha');
+INSERT INTO public."TimeZones" VALUES (48, '(UTC+00:00) Dublin, Edinburgh, Lisbon, London', 'GMT Standard Time', B'1', '12:00:00 AM', 'Europe/London');
+INSERT INTO public."TimeZones" VALUES (49, '(UTC+00:00) Monrovia, Reykjavik', 'Greenwich Standard Time', B'0', '12:00:00 AM', 'Atlantic/Reykjavik');
+INSERT INTO public."TimeZones" VALUES (50, '(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna', 'W. Europe Standard Time', B'1', '01:00:00 AM', 'Europe/Berlin');
+INSERT INTO public."TimeZones" VALUES (52, '(UTC+01:00) Brussels, Copenhagen, Madrid, Paris', 'Romance Standard Time', B'1', '01:00:00 AM', 'Europe/Paris');
+INSERT INTO public."TimeZones" VALUES (53, '(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb', 'Central European Standard Time', B'1', '01:00:00 AM', 'Europe/Warsaw');
+INSERT INTO public."TimeZones" VALUES (54, '(UTC+01:00) West Central Africa', 'W. Central Africa Standard Time', B'0', '01:00:00 AM', 'Africa/Lagos');
+INSERT INTO public."TimeZones" VALUES (56, '(UTC+02:00) Amman', 'Jordan Standard Time', B'1', '02:00:00 AM', 'Asia/Amman');
+INSERT INTO public."TimeZones" VALUES (57, '(UTC+02:00) Athens, Bucharest', 'GTB Standard Time', B'1', '02:00:00 AM', 'Europe/Bucharest');
+INSERT INTO public."TimeZones" VALUES (58, '(UTC+02:00) Beirut', 'Middle East Standard Time', B'1', '02:00:00 AM', 'Asia/Beirut');
+INSERT INTO public."TimeZones" VALUES (59, '(UTC+02:00) Cairo', 'Egypt Standard Time', B'1', '02:00:00 AM', 'Africa/Cairo');
+INSERT INTO public."TimeZones" VALUES (60, '(UTC+02:00) Chisinau', 'E. Europe Standard Time', B'1', '02:00:00 AM', 'Europe/Chisinau');
+INSERT INTO public."TimeZones" VALUES (61, '(UTC+02:00) Damascus', 'Syria Standard Time', B'1', '02:00:00 AM', 'Asia/Damascus');
+INSERT INTO public."TimeZones" VALUES (64, '(UTC+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius', 'FLE Standard Time', B'1', '02:00:00 AM', 'Europe/Kiev');
+INSERT INTO public."TimeZones" VALUES (67, '(UTC+02:00) Tripoli', 'Libya Standard Time', B'1', '02:00:00 AM', 'Africa/Tripoli');
+INSERT INTO public."TimeZones" VALUES (55, '(UTC+01:00) Windhoek', 'Namibia Standard Time', B'1', '01:00:00 AM', 'Africa/Windhoek');
+INSERT INTO public."TimeZones" VALUES (68, '(UTC+03:00) Baghdad', 'Arabic Standard Time', B'1', '03:00:00 AM', 'Asia/Baghdad');
+INSERT INTO public."TimeZones" VALUES (69, '(UTC+03:00) Istanbul', 'Turkey Standard Time', B'1', '03:00:00 AM', 'Europe/Istanbul');
+INSERT INTO public."TimeZones" VALUES (70, '(UTC+03:00) Kuwait, Riyadh', 'Arab Standard Time', B'0', '03:00:00 AM', 'Asia/Riyadh');
+INSERT INTO public."TimeZones" VALUES (71, '(UTC+03:00) Minsk', 'Belarus Standard Time', B'1', '03:00:00 AM', 'Europe/Minsk');
+INSERT INTO public."TimeZones" VALUES (73, '(UTC+03:00) Nairobi', 'E. Africa Standard Time', B'0', '03:00:00 AM', 'Africa/Nairobi');
+INSERT INTO public."TimeZones" VALUES (76, '(UTC+04:00) Astrakhan, Ulyanovsk', 'Astrakhan Standard Time', B'1', '04:00:00 AM', 'Europe/Astrakhan');
+INSERT INTO public."TimeZones" VALUES (75, '(UTC+04:00) Abu Dhabi, Muscat', 'Arabian Standard Time', B'0', '04:00:00 AM', 'Asia/Dubai');
+INSERT INTO public."TimeZones" VALUES (77, '(UTC+04:00) Baku', 'Azerbaijan Standard Time', B'1', '04:00:00 AM', 'Asia/Baku');
+INSERT INTO public."TimeZones" VALUES (79, '(UTC+04:00) Port Louis', 'Mauritius Standard Time', B'1', '04:00:00 AM', 'Indian/Mauritius');
+INSERT INTO public."TimeZones" VALUES (81, '(UTC+04:00) Tbilisi', 'Georgian Standard Time', B'0', '04:00:00 AM', 'Asia/Tbilisi');
+INSERT INTO public."TimeZones" VALUES (43, '(UTC-02:00) Mid-Atlantic - Old', 'Mid-Atlantic Standard Time', B'1', '-02:00:00', '');
+INSERT INTO public."TimeZones" VALUES (2, '(UTC-11:00) Coordinated Universal Time-11', 'UTC-11', B'0', '-11:00:00', 'Etc/GMT+11');
+INSERT INTO public."TimeZones" VALUES (1, '(UTC-12:00) International Date Line West', 'Dateline Standard Time', B'0', '-12:00:00', 'Etc/GMT+12');
+INSERT INTO public."TimeZones" VALUES (12, '(UTC-07:00) Chihuahua, La Paz, Mazatlan', 'Mountain Standard Time (Mexico)', B'1', '-07:00:00', 'America/Chihuahua');
+INSERT INTO public."TimeZones" VALUES (17, '(UTC-06:00) Guadalajara, Mexico City, Monterrey', 'Central Standard Time (Mexico)', B'1', '-06:00:00', 'America/Mexico_City');
+INSERT INTO public."TimeZones" VALUES (25, '(UTC-04:00) Asuncion', 'Paraguay Standard Time', B'1', '-04:00:00', 'America/Asuncion');
+INSERT INTO public."TimeZones" VALUES (31, '(UTC-04:00) Turks and Caicos', 'Turks and Caicos Standard Time', B'1', '-04:00:00', 'America/Grand_Turk');
+INSERT INTO public."TimeZones" VALUES (38, '(UTC-03:00) Montevideo', 'Montevideo Standard Time', B'1', '-03:00:00', 'America/Montevideo');
+INSERT INTO public."TimeZones" VALUES (47, '(UTC+00:00) Casablanca', 'Morocco Standard Time', B'1', '12:00:00 AM', 'Africa/Casablanca');
+INSERT INTO public."TimeZones" VALUES (51, '(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague', 'Central Europe Standard Time', B'1', '01:00:00 AM', 'Europe/Budapest');
+INSERT INTO public."TimeZones" VALUES (63, '(UTC+02:00) Harare, Pretoria', 'South Africa Standard Time', B'0', '02:00:00 AM', 'Africa/Johannesburg');
+INSERT INTO public."TimeZones" VALUES (74, '(UTC+03:30) Tehran', 'Iran Standard Time', B'1', '03:30:00 AM', 'Asia/Tehran');
+INSERT INTO public."TimeZones" VALUES (80, '(UTC+04:00) Saratov', 'Saratov Standard Time', B'1', '04:00:00 AM', 'Europe/Saratov');
+INSERT INTO public."TimeZones" VALUES (82, '(UTC+04:00) Yerevan', 'Caucasus Standard Time', B'1', '04:00:00 AM', 'Asia/Yerevan');
+INSERT INTO public."TimeZones" VALUES (84, '(UTC+05:00) Ashgabat, Tashkent', 'West Asia Standard Time', B'0', '05:00:00 AM', 'Asia/Tashkent');
+INSERT INTO public."TimeZones" VALUES (83, '(UTC+04:30) Kabul', 'Afghanistan Standard Time', B'0', '04:30:00 AM', 'Asia/Kabul');
+INSERT INTO public."TimeZones" VALUES (6, '(UTC-09:00) Alaska', 'Alaskan Standard Time', B'1', '-09:00:00', 'America/Anchorage');
+INSERT INTO public."TimeZones" VALUES (86, '(UTC+05:00) Islamabad, Karachi', 'Pakistan Standard Time', B'1', '05:00:00 AM', 'Asia/Karachi');
+INSERT INTO public."TimeZones" VALUES (88, '(UTC+05:30) Sri Jayawardenepura', 'Sri Lanka Standard Time', B'0', '05:30:00 AM', 'Asia/Colombo');
+INSERT INTO public."TimeZones" VALUES (89, '(UTC+05:45) Kathmandu', 'Nepal Standard Time', B'0', '05:45:00 AM', 'Asia/Katmandu');
+INSERT INTO public."TimeZones" VALUES (90, '(UTC+06:00) Astana', 'Central Asia Standard Time', B'0', '06:00:00 AM', 'Asia/Almaty');
+INSERT INTO public."TimeZones" VALUES (91, '(UTC+06:00) Dhaka', 'Bangladesh Standard Time', B'1', '06:00:00 AM', 'Asia/Dhaka');
+INSERT INTO public."TimeZones" VALUES (92, '(UTC+06:00) Omsk', 'Omsk Standard Time', B'1', '06:00:00 AM', 'Asia/Omsk');
+INSERT INTO public."TimeZones" VALUES (93, '(UTC+06:30) Yangon (Rangoon)', 'Myanmar Standard Time', B'0', '06:30:00 AM', 'Asia/Rangoon');
+INSERT INTO public."TimeZones" VALUES (94, '(UTC+07:00) Bangkok, Hanoi, Jakarta', 'SE Asia Standard Time', B'0', '07:00:00 AM', 'Asia/Bangkok');
+INSERT INTO public."TimeZones" VALUES (95, '(UTC+07:00) Barnaul, Gorno-Altaysk', 'Altai Standard Time', B'1', '07:00:00 AM', 'Asia/Barnaul');
+INSERT INTO public."TimeZones" VALUES (96, '(UTC+07:00) Hovd', 'W. Mongolia Standard Time', B'1', '07:00:00 AM', 'Asia/Hovd');
+INSERT INTO public."TimeZones" VALUES (99, '(UTC+07:00) Tomsk', 'Tomsk Standard Time', B'1', '07:00:00 AM', 'Asia/Hovd');
+INSERT INTO public."TimeZones" VALUES (100, '(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi', 'China Standard Time', B'0', '08:00:00 AM', 'Asia/Shanghai');
+INSERT INTO public."TimeZones" VALUES (103, '(UTC+08:00) Perth', 'W. Australia Standard Time', B'1', '08:00:00 AM', 'Australia/Perth');
+INSERT INTO public."TimeZones" VALUES (104, '(UTC+08:00) Taipei', 'Taipei Standard Time', B'0', '08:00:00 AM', 'Asia/Taipei');
+INSERT INTO public."TimeZones" VALUES (105, '(UTC+08:00) Ulaanbaatar', 'Ulaanbaatar Standard Time', B'1', '08:00:00 AM', 'Asia/Ulaanbaatar');
+INSERT INTO public."TimeZones" VALUES (106, '(UTC+08:30) Pyongyang', 'North Korea Standard Time', B'1', '08:30:00 AM', 'Asia/Pyongyang');
+INSERT INTO public."TimeZones" VALUES (107, '(UTC+08:45) Eucla', 'Aus Central W. Standard Time', B'0', '08:45:00 AM', 'Australia/Eucla');
+INSERT INTO public."TimeZones" VALUES (114, '(UTC+10:00) Brisbane', 'E. Australia Standard Time', B'0', '10:00:00 AM', 'Australia/Brisbane');
+INSERT INTO public."TimeZones" VALUES (108, '(UTC+09:00) Chita', 'Transbaikal Standard Time', B'1', '09:00:00 AM', 'Asia/Chita');
+INSERT INTO public."TimeZones" VALUES (109, '(UTC+09:00) Osaka, Sapporo, Tokyo', 'Tokyo Standard Time', B'0', '09:00:00 AM', 'Asia/Tokyo');
+INSERT INTO public."TimeZones" VALUES (112, '(UTC+09:30) Adelaide', 'Cen. Australia Standard Time', B'1', '09:30:00 AM', 'Australia/Adelaide');
+INSERT INTO public."TimeZones" VALUES (110, '(UTC+09:00) Seoul', 'Korea Standard Time', B'0', '09:00:00 AM', 'Asia/Seoul');
+INSERT INTO public."TimeZones" VALUES (113, '(UTC+09:30) Darwin', 'AUS Central Standard Time', B'0', '09:30:00 AM', 'Australia/Darwin');
+INSERT INTO public."TimeZones" VALUES (115, '(UTC+10:00) Canberra, Melbourne, Sydney', 'AUS Eastern Standard Time', B'1', '10:00:00 AM', 'Australia/Sydney');
+INSERT INTO public."TimeZones" VALUES (119, '(UTC+10:30) Lord Howe Island', 'Lord Howe Standard Time', B'1', '10:30:00 AM', 'Australia/Lord_Howe');
+INSERT INTO public."TimeZones" VALUES (116, '(UTC+10:00) Guam, Port Moresby', 'West Pacific Standard Time', B'0', '10:00:00 AM', 'Pacific/Port_Moresby');
+INSERT INTO public."TimeZones" VALUES (117, '(UTC+10:00) Hobart', 'Tasmania Standard Time', B'1', '10:00:00 AM', 'Australia/Hobart');
+INSERT INTO public."TimeZones" VALUES (120, '(UTC+11:00) Bougainville Island', 'Bougainville Standard Time', B'1', '11:00:00 AM', 'Pacific/Bougainville');
+INSERT INTO public."TimeZones" VALUES (122, '(UTC+11:00) Magadan', 'Magadan Standard Time', B'1', '11:00:00 AM', 'Asia/Magadan');
+INSERT INTO public."TimeZones" VALUES (123, '(UTC+11:00) Norfolk Island', 'Norfolk Standard Time', B'1', '11:00:00 AM', 'Pacific/Norfolk');
+INSERT INTO public."TimeZones" VALUES (124, '(UTC+11:00) Sakhalin', 'Sakhalin Standard Time', B'1', '11:00:00 AM', 'Asia/Sakhalin');
+INSERT INTO public."TimeZones" VALUES (125, '(UTC+11:00) Solomon Is., New Caledonia', 'Central Pacific Standard Time', B'0', '11:00:00 AM', 'Pacific/Guadalcanal');
+INSERT INTO public."TimeZones" VALUES (127, '(UTC+12:00) Auckland, Wellington', 'New Zealand Standard Time', B'1', '12:00:00 PM', 'Pacific/Auckland');
+INSERT INTO public."TimeZones" VALUES (128, '(UTC+12:00) Coordinated Universal Time+12', 'UTC+12', B'0', '12:00:00 PM', 'Pacific/Majuro');
+INSERT INTO public."TimeZones" VALUES (129, '(UTC+12:00) Fiji', 'Fiji Standard Time', B'1', '12:00:00 PM', 'Pacific/Fiji');
+INSERT INTO public."TimeZones" VALUES (130, '(UTC+12:00) Petropavlovsk-Kamchatsky - Old', 'Kamchatka Standard Time', B'1', '12:00:00 PM', 'Asia/Kamchatka');
+INSERT INTO public."TimeZones" VALUES (135, '(UTC+14:00) Kiritimati Island', 'Line Islands Standard Time', B'0', '02:00:00 PM', 'Pacific/Kiritimati');
+INSERT INTO public."TimeZones" VALUES (131, '(UTC+12:45) Chatham Islands', 'Chatham Islands Standard Time', B'1', '12:45:00 PM', 'Pacific/Chatham');
+INSERT INTO public."TimeZones" VALUES (132, '(UTC+13:00) Coordinated Universal Time+13', 'UTC+13', B'0', '01:00:00 PM', 'Pacific/Tongatapu');
+INSERT INTO public."TimeZones" VALUES (133, '(UTC+13:00) Nuku''alofa', 'Tonga Standard Time', B'1', '01:00:00 PM', 'Pacific/Tongatapu');
+INSERT INTO public."TimeZones" VALUES (134, '(UTC+13:00) Samoa', 'Samoa Standard Time', B'1', '01:00:00 PM', 'Pacific/Apia');
+INSERT INTO public."TimeZones" VALUES (87, '(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi', 'India Standard Time', B'0', '05:30:00 AM', 'Asia/Calcutta');
+
+
+-- Completed on 2022-01-13 22:22:17
+
+--
+-- PostgreSQL database dump complete
+--
+
